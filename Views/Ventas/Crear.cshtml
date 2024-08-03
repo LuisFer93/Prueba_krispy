@@ -1,0 +1,27 @@
+﻿@model Prueba_donas.Models.VentaDona
+
+<h2>Registro de Venta</h2>
+
+<form asp-action="Crear" method="post">
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Direccion"></label>
+        <input asp-for="Direccion" class="form-control" />
+        <span asp-validation-for="Direccion" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="TipoDona"></label>
+        <input asp-for="TipoDona" class="form-control" />
+        <span asp-validation-for="TipoDona" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Cantidad"></label>
+        <input asp-for="Cantidad" class="form-control" />
+        <span asp-validation-for="Cantidad" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Registrar Venta</button>
+</form>

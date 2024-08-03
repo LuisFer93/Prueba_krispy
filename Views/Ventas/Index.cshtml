@@ -1,0 +1,25 @@
+﻿@model List<Prueba_donas.Models.VentaDona>
+
+<h2>Lista de Ventas</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Tipo de Dona</th>
+            <th>Cantidad</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var venta in Model)
+        {
+            <tr>
+                <td>@venta.Nombre</td>
+                <td>@venta.Direccion</td>
+                <td>@venta.TipoDona</td>
+                <td>@venta.Cantidad</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/Ventas/Crear" class="btn btn-primary">Nueva Venta</a>
